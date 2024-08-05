@@ -133,6 +133,7 @@ ifneq (,$(filter y,$(CONFIG_FIRMWARE_INCLUDE_XUPNPD) $(CONFIG_FIRMWARE_INCLUDE_L
 dir_y						+= lua
 dir_$(CONFIG_FIRMWARE_INCLUDE_XUPNPD)           += xupnpd
 endif
+dir_$(CONFIG_FIRMWARE_INCLUDE_OBFS4)            += obfs4
 
 ifdef CONFIG_BLK_DEV_SD
 dir_$(CONFIG_FIRMWARE_INCLUDE_HDPARM)		+= hdparm
